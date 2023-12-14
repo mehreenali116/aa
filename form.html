@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beating Heart with Golgi</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .heart-wrapper {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      font-size: 8em;
+    }
+
+    .heart {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: red;
+      animation: beat 1s infinite ease-in-out;
+    }
+
+    @keyframes beat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .text-inside {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 0.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-wrapper">
+    <div class="heart">&hearts;</div>
+    <div class="text-inside">areej randi <33</div>
+  </div>
+</body>
+</html>
